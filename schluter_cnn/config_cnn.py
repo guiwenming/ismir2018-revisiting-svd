@@ -4,10 +4,16 @@ Config file for CNN model
 
 # --  CHANGE PATHS --# 
 
-# Jamendo
-JAMENDO_DIR = '../jamendo/'  # path to jamendo dataset
-MEL_JAMENDO_DIR = '../jamendo/schluter_mel_dir/'  # path to save computed melgrams of jamendo
-JAMENDO_LABEL_DIR = '../jamendo/jamendo_lab/'  # path to jamendo dataset label
+# Jamendo for my laptop
+#JAMENDO_DIR = 'E:/GwmDoc/MusicData/jamendo/'  # path to jamendo dataset
+#MEL_JAMENDO_DIR = 'E:/GwmDoc/MusicData/jamendo/schluter_mel_dir/'  # path to save computed melgrams of jamendo
+#JAMENDO_LABEL_DIR = 'E:/GwmDoc/MusicData/jamendo/jamendo_lab/'  # path to jamendo dataset label
+
+# Jamendo for frank
+
+JAMENDO_DIR = '/homes/wgui/jamendo/'  # path to jamendo dataset
+MEL_JAMENDO_DIR = JAMENDO_DIR + 'schluter_mel_dir/'  # path to save computed melgrams of jamendo
+JAMENDO_LABEL_DIR = JAMENDO_DIR + 'jamendo_lab/'  # path to jamendo dataset label
 
 # MedleyDB
 MDB_VOC_DIR = '/media/bach1/dataset/MedleyDB/'  # path to medleyDB vocal containing songs

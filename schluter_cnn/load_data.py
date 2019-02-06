@@ -27,7 +27,8 @@ def load_label(audio_spec, audio_label_file):
             end = librosa.time_to_frames(float(l[1]), sr=SR, hop_length=HOP_LENGTH)
 
             is_vocal = 1 if l[2] == 'sing' or l[2] == '1' else 0
-            label[start:end] = int(is_vocal)
+            # label[start:end] = int(is_vocal)
+            label[start[0]:end[0]] = int(is_vocal)   # gwm 23/1/2019
 
     return label
 

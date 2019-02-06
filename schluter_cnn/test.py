@@ -13,7 +13,7 @@ from load_data import *
 from model import *
 from config_cnn import *
 
-np.random.seed(0)
+np.random.seed(0)    # generate the same random number for the subsequent rand function
 # set gpu number
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
